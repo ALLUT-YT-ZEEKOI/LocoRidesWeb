@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- testimonial -->
@@ -15,9 +16,7 @@
 <!-- fonts  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
@@ -26,7 +25,13 @@
     
 
 <!-- custome css    -->
-
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
@@ -50,35 +55,141 @@
    </div>
    <header>
     <nav>
-        <div class="logo">
-            <a href="#">Komo Bike</a>
-            <span>RENTALS & TOURS</span>
-        </div>
+      <div class="logo">
+        <a href="#">Komo Bike</a>
+      </div>
+  
+      <div class="nav-container">
         <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">RENTAL</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">BIKE TOURS</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">FEATURES</a></li>
-        </ul>
-        <a href="#" class="book-btn">Book a bike</a>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Bike Tariffs</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Bike Tours</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Partner with us</a></li>
+          
+            <li class="dropdown">
+              <a href="#">Resources</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </li>
+          
+            <li><a href="#">Contact</a></li>
+          </ul>
+          
+      </div>
+  
+      <a href="#" class="book-btn">Book a bike</a>
     </nav>
-</header>
-<div class="banner">
-    <div class="banner-image">
-        <img src="Screenshot 2025-03-18 134516.png" alt="Banner Image">
-        <!-- <div class="banner-text">
-            <h1>GET & GO!</h1>
-            <div>Self guided hiking tours, guided hiking tours.</div>
-            <p>Our guided hiking tours to the national parks of the western USA are epic adventures where guides are necessary. Let us help you Choose!</p>
-            <div class="buttons">
-                <a href="#" class="btn">Find a Bike</a>
-                <a href="#" class="btn">View Guided Tours</a>
+  </header>
+
+
+      <!-- slider -->
+
+      <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="image/img1.png">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 01</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
             </div>
-        </div> -->
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 02</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 03</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 04</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img5.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 05</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="image/img1.png">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img5.jpg">
+                <div class="content">
+                    Name Slider
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
+
+
 <h2 style="text-align: center;margin-top:40px;">Why to Rent Our Bike?</h1>
     <div class="container mt-4">
         <div class="row align-items-center">
@@ -138,20 +249,133 @@
  
     <!-- productCard -->
     <h2 style="text-align: center;margin-top:30px;">Bike</h1>
-    <div class="container">
-        <div class="row mt-4" id="card-container"></div>
+        <div class="container">
+            <div class="row mt-4" id="card-container">
+        
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="assets/Royal Enfield classic 1.png" class="card-img-top" width="100%">
+                        <div class="card-body pt-0 px-0">
+                            <div class="d-flex flex-row justify-content-between mb-0 px-3">
+                                <span class="text-muted">Extra km</span>
+                                <h6>₹6.0 /km&ast;</h6>
+                            </div>
+                            <hr class="mt-2 mx-3">
+                            <div class="d-flex flex-row justify-content-between px-3 pb-3">
+                                <div class="d-flex flex-column">
+                                    <span class="text-muted">Km limit</span>
+                                    <!-- <small class="text-muted">L/100KM&ast;</small> -->
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h5 class="mb-0">75 km</h5>
+                                    <!-- <small class="text-muted text-right">(city/Hwy)</small> -->
+                                </div>
+                            </div>
+                         
+                            <div class="d-flex flex-row justify-content-between p-3 mid">
+                                <div class="d-flex flex-column">
+                                    <!-- <small class="text-muted mb-1">ENGINE</small> -->
+                                    <div class="d-flex flex-row">
+                                        <img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px">
+                                        <div class="d-flex flex-column ml-1">
+                                            <small class="ghj">1.4L MultiAir</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                           
+                                    <div class="d-flex flex-row">
+                                        <!-- <img src="https://imgur.com/J11mEBq.png"> -->
+                                        <h6 class="ml-1">₹330.00/day&ast;</h6>
+                                        
+                                    </div>
+                                    <small class="text-muted mb-2">Rent this bike</small>
+                                </div>
+                            </div>
+                            <!-- <small class="text-muted key pl-3">Standard key Features</small> -->
+                            <div class="mx-3 mt-2 mb-2">
+                                <button type="button" class="btn btn-danger btn-block" style="width:100% ; background-color: #F23300;">
+                                    <small>BUILD & PRICE</small>
+                                </button>
+                            </div>
+                            <small class="d-flex justify-content-center text-muted">*Legal Disclaimer</small>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Copy the above block multiple times if you want more cards -->
+        
+            </div>
+        </div>
+        
+        <!-- Included with every bike rental: -->
+<div style="display: flex;justify-content: center;">
+    <div class="small_baner">
+    
+        <div class="small_baner_1">Included with every <br> bike rental: <br>
+        <a href="" style="color: red; font-size: 14px;">All rental guidelines →</a>
+        </div>
+        <div class="small_baner_2">Helmet</div>
+        <div class="small_baner_2">Bike Lock</div>
+        <div class="small_baner_2">GPS-Guided Audio Tour</div>
+        <div class="small_baner_2">Front Basket</div>
     </div>
+   
+</div>
+
+<!-- announcement banner -->
+<div style="display: flex;justify-content: center; align-items: center;">
+    <div class="announcement_maindiv">
+<div class="row">
+    <div class="col-4">
+      <div style="display: flex;flex-direction: column;align-items: center;">
+        <img src="image.png" width="200px" alt="">
+        <div class="announcement_head"> Reserve Your <br> Bike Online <br> and Save</div>
+        <a href="#" class="book-btn">Book a bike</a>
+      </div>
+    </div>
+    <div class="col-4">
+        <img src="assets\image.png" width="400px" alt="">
+    </div>
+    <div class="col-4">
+    <div class="announcement_head_2">
+        For bike rental & bike tour <br> with pick up at:
+    </div>
+    <hr style="width: 300px;">
+<div style="display: flex;">
+<div style="display: flex;flex-direction: column;">
+<div class="announcement_child_2">Kona Central Park</div>
+<div class="announcement_child_3">203 West 58th Street <br>
+    New York <br>
+    +800-567-8990 <br>
+    See map</div>
+</div>
+<div style="width: 25px;"></div>
+<div style="display: flex;flex-direction: column;">
+    <div class="announcement_child_2">Kona Central Park</div>
+    <div class="announcement_child_3">203 West 58th Street <br>
+        New York <br>
+        +800-567-8990 <br>
+        See map</div>
+    </div>
+</div>
+</div>
+</div>
+    </div>
+ </div>
+
+
 
     <!-- banner -->
     <h2 style="text-align: center;margin-top:40px;margin-bottom: 30px;">Our impact in numbers</h1>
-     <img src="WhatsApp Image 2025-03-17 at 12.58.28_9106a2bf.jpg" width="100%" height="600" alt="">
+     <img src="assets/WhatsApp Image 2025-03-17 at 12.58.28_9106a2bf.jpg" width="100%" height="600" alt="">
      <!-- Faq -->
      <h2 style="text-align: center;margin-top:30px;margin-bottom: 50px; ">FAQs - Got Questions? We've Got Answers! ❓
     </h1>
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <img src="WhatsApp Image 2025-03-17 at 12.58.36_c5b44415.jpg" width="100%" alt="">
+                <img src="assets/WhatsApp Image 2025-03-17 at 12.58.36_c5b44415.jpg" width="100%" alt="">
             </div>
             <div class="col-6">
                 <div class="accordion_bike">
@@ -221,7 +445,7 @@
       
     <section class="py-5 testimonial-sec" style="background-image: url(imgs/test-bg.png);">
         <div class="container">
-            <h2 class="title text-center mb-4 "><span>Why People </span> Say About Our <br> Services</h2>
+            <h2 class="title text-center mb-4 "><span>Why People </span> Say About Our Services</h2>
 
             <div class="testimonial-slider">
                 <div class="testimonial-box">
@@ -288,96 +512,104 @@
         </div>
     </section>
     
- 
-<div style="height: 250px;"></div>
-<footer class="footer">
-    <div class="footer__parralax">
-      <div class="footer__parralax-trees"></div>
-      <div class="footer__parralax-moto"></div>
-      <div class="footer__parralax-secondplan"></div>
-      <div class="footer__parralax-premierplan"></div>
-      <div class="footer__parralax-voiture"></div>
-    </div>
-    <div class="container">
-      <div class="footer__columns">
-        <div class="footer__col">
-          <h3 class="footer__col-title">
-            <i data-feather="shopping-bag"></i> <span>La boutique</span></h3>
-          <nav class="footer__nav">
-            <ul class="footer__nav-list">
-              <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
-                  Mentions légales
-                </a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
-                  Politique de confidentialité
-                </a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
-                  CGV
-                </a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
-                  Livraisons et retours
-                </a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
-                  Règlement concours
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__col">
-          <h3 class="footer__col-title">
-            <i data-feather="share-2"></i> <span>Nos réseaux</span></h3>
-          <nav class="footer__nav">
-            <ul class="footer__nav-list">
-              <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
-                  <i data-feather="youtube"></i><span>Youtube</span>
-                </a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
-                  <i data-feather="facebook"></i><span>Facebook</span>
-                  
-                </a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
-                  <i data-feather="instagram"></i><span>Instagram</span>
-                  
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__col">
-          <h3 class="footer__col-title">
-            <i data-feather="send"></i> <span>Contact</span></h3>
-          <nav class="footer__nav">
-            <ul class="footer__nav-list">
-              <li class="footer__nav-item">
-                <a href="mailto:contact.laboiserie@gmail.com" class="footer__nav-link">
-                  contact.laboiserie@gmail.com
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-        <div class="footer__copyrights">
-          <p>Réalisé par <a href="https://twitter.com/silvereledev" target="_blank">@SilvereLeDev</a></p>
-        </div>
-    </div>
-  </footer>
+ <div class="POWERED">POWERED BY WORLDWIDE BRANDS</div>
+ <div class="POWERED_items">
+    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-01.svg" alt="">
+    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-03.svg" alt="">
+    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-01.svg" alt="">
+    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-03.svg" alt="">
+    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-01.svg" alt="">
+    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-03.svg" alt="">
+ </div>
 
+<div style="display: flex;justify-content: center;"> <img src="assets\wdwdw.png" alt=""></div>
+<div style="display: flex;justify-content: center;">
+    <div class="customer_footer">
+            <div style="display: flex;justify-content: space-between;font-size: 13px;color: rgba(255, 255, 255, 0.707);">
+                <div>
+                    Hours of Operation: <br> 7:00 am - 9:00 pm (Mon - Sun)
+                </div>
+                <div>
+                    Call us: <br>
+                    800-567-8990
+                </div>
+            </div>
+         
+<div style="display: flex;justify-content: space-between;">
+    <div style="display: flex;flex-direction: column; justify-content: space-between;">
+        <div class="custom_footer_head">Bikes</div>
+        <div class="custom_footer_child">Handbrake Bike</div>
+        <div class="custom_footer_child">Handbrake Bike</div>
+        <div class="custom_footer_child">Handbrake Bike</div>
+        <div class="custom_footer_child">Handbrake Bike</div>
+        <div class="custom_footer_child">Handbrake Bike</div>
+        <div class="custom_footer_child">Handbrake Bike</div>
+        <a href="#" class="book-btn">Book a bike</a>
+</div>
+<div style="display: flex;flex-direction: column; justify-content: space-between;">
+    <div class="custom_footer_head">Bikes</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+</div>
+<div style="display: flex;flex-direction: column; justify-content: space-between;">
+    <div class="custom_footer_head">Bikes</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+</div>
+<div style="display: flex;flex-direction: column; justify-content: space-between;">
+    <div class="custom_footer_head">Bikes</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+</div>
+<div style="display: flex;flex-direction: column; justify-content: space-between;">
+    <div class="custom_footer_head">Bikes</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+</div>
+<div style="display: flex;flex-direction: column; justify-content: space-between;">
+    <div class="custom_footer_head">Bikes</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Handbrake Bike</div>
+</div>
+
+
+</div>
+<img src="assets\Screenshot 2025-04-27 174618a.png" width="100%" alt="">
+<div style="display:flex; justify-content: space-between;">
+<div style="font-size: 13px;color: gray;">© 2025 Bike Rental Theme / VamTam. All rights reserved.</div>
+<div style="display: flex;align-items: center;">
+<div><i class="fab fa-facebook-f" style="padding-right: 30px;"></i></div>
+<div><i class="fab fa-whatsapp"  style="padding-right: 30px;"></i></i></div>
+<div><i class="fa-brands fa-instagram" style="padding-right: 30px;"></i></div>
+</div>
+<div style="font-size: 13px;color: gray;">Terms and Conditions</div>
+</div>
+    </div>
+
+</div>
+
+
+<script src="app.js"></script>
   <script src='https://unpkg.com/feather-icons'></script><script  src="dist/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -387,6 +619,15 @@ crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
+const links = document.querySelectorAll('.nav-links a');
+links.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove 'active' from all links
+    links.forEach(l => l.classList.remove('active'));
+    // Add 'active' to the clicked link
+    this.classList.add('active');
+  });
+});
    $('.testimonial-slider').slick({
         dots: true,
         infinite: true,
@@ -439,62 +680,6 @@ crossorigin="anonymous"></script>
                 icon.style.transform = item.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
             });
         });
- 
-    const cardData = [
-        { img: "Royal Enfield classic 1.png", price: "$22,495", fuel: "8.5/7.1", engine: "1.4L MultiAir", horsepower: "135 hp" },
-        { img: "Royal Enfield classic 1.png", price: "$22,495", fuel: "8.5/7.1", engine: "1.4L MultiAir", horsepower: "135 hp" },
-        { img: "Royal Enfield classic 1.png", price: "$22,495", fuel: "8.5/7.1", engine: "1.4L MultiAir", horsepower: "135 hp" },
-        { img: "Royal Enfield classic 1.png", price: "$22,495", fuel: "8.5/7.1", engine: "1.4L MultiAir", horsepower: "135 hp" }
-    ];
-
-    function generateCards() {
-        let container = document.getElementById("card-container");
-        container.innerHTML = "";
-        cardData.forEach(data => {
-            let card = `
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="${data.img}" class="card-img-top" width="100%">
-                        <div class="card-body pt-0 px-0">
-                            <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                <small class="text-muted mt-1">STARTING AT</small>
-                                <h6>${data.price}&ast;</h6>
-                            </div>
-                            <hr class="mt-2 mx-3">
-                            <div class="d-flex flex-row justify-content-between px-3 pb-4">
-                                <div class="d-flex flex-column"><span class="text-muted">Fuel Efficiency</span><small class="text-muted">L/100KM&ast;</small></div>
-                                <div class="d-flex flex-column"><h5 class="mb-0">${data.fuel}</h5><small class="text-muted text-right">(city/Hwy)</small></div>
-                            </div>
-                            <div class="d-flex flex-row justify-content-between p-3 mid">
-                                <div class="d-flex flex-column"><small class="text-muted mb-1">ENGINE</small>
-                                    <div class="d-flex flex-row">
-                                        <img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px">
-                                        <div class="d-flex flex-column ml-1">
-                                            <small class="ghj">${data.engine}</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <small class="text-muted mb-2">HORSEPOWER</small>
-                                    <div class="d-flex flex-row">
-                                        <img src="https://imgur.com/J11mEBq.png">
-                                        <h6 class="ml-1">${data.horsepower}&ast;</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <small class="text-muted key pl-3">Standard key Features</small>
-                            <div class="mx-3 mt-2 mb-2">
-                                <button type="button" class="btn btn-danger btn-block" style="width:100%"><small>BUILD & PRICE</small></button>
-                            </div>
-                            <small class="d-flex justify-content-center text-muted">*Legal Disclaimer</small>
-                        </div>
-                    </div>
-                </div>
-            `;
-            container.innerHTML += card;
-        });
-    }
-    generateCards();
 </script>
 
 
