@@ -1,87 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bike Reservation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        
-        h1 {
-            color: #2a5caa;
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        
-        h2 {
-            color: #2a5caa;
-            font-size: 20px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-        
-        .locations {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        
-        .location {
-            width: 48%;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-        
-        .location-name {
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        
-        .address, .city, .phone {
-            margin-bottom: 8px;
-        }
-        
-        .map-link {
-            color: #2a5caa;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .map-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Popup Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+  </style>
 </head>
 <body>
-    <h1>Reserve Your Bike Online and Save</h1>
-    
-    <h2>For bike rental & bike tour with pick up at:</h2>
-    
-    <div class="locations">
-        <div class="location">
-            <div class="location-name">Kona Central Park</div>
-            <div class="address">203 West S8th Street</div>
-            <div class="city">New York</div>
-            <div class="phone">+800-567-8990</div>
-            <a href="#" class="map-link">See map</a>
-        </div>
-        
-        <div class="location">
-            <div class="location-name">Kona Central Park</div>
-            <div class="address">203 West S8th Street</div>
-            <div class="city">New York</div>
-            <div class="phone">+800-567-8990</div>
-            <a href="#" class="map-link">See map</a>
-        </div>
-    </div>
+
+<!-- Popup -->
+
+
+<script>
+  // Show popup on page load
+  window.onload = function() {
+    document.getElementById('popup').style.display = 'flex';
+  };
+
+  // Close popup
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+</script>
+
 </body>
 </html>

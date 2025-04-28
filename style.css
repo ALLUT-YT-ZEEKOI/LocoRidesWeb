@@ -135,7 +135,7 @@ header {
 
 .ourbike_icondiv{
     background: #d7fcf5;
-    padding: 50px;
+    padding: 40px;
     border-radius: 100%;
 }
 .ourBikeMainhead{
@@ -442,7 +442,7 @@ margin-top: 30px;
     border-radius: 20px;
     color: white;
     width: 98%;
-    margin:0px 30px;
+    margin:0px 30px 30px 30px;
    
     padding: 35px 80px 35px 80px;
 }
@@ -499,3 +499,143 @@ padding: 12px;
     color: white;
     font-size: 14px; 
 }
+.varkala_div {
+    width: 95px;
+    /* height: 36px; */
+    background: white;
+    border-radius: 39.8px;
+    position: relative;
+    display: flex
+;
+    align-items: center;
+    padding: 0 30px 0 7px;
+    font-size: 10px;
+    color: #555;
+    margin-top: 3px;
+}
+
+.varkala_div i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: #555;
+    pointer-events: none;
+}
+
+    /* Popup background */
+    .popup-overlay {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+  
+      /* Popup content */
+      .popup-content {
+        background: url('https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+        width: 700px;
+        max-width: 90%;
+        border-radius: 10px;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      }
+  
+      /* Close button */
+      .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background: rgba(0,0,0,0.5);
+        border: none;
+        border-radius: 50%;
+        font-size: 18px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        transition: all 0.3s ease;
+      }
+  
+      .close-btn:hover {
+        background: rgba(0,0,0,0.8);
+        transform: scale(1.1);
+      }
+  
+      /* Left image */
+      .popup-left {
+        flex: 1;
+        background: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&w=500&q=80') no-repeat center center/cover;
+        min-height: 400px;
+      }
+  
+      /* Right content */
+      .popup-right {
+        flex: 1;
+        background: rgba(255,255,255,0.9);
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+  
+      .popup-right h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+  
+      .popup-right .buttons {
+        margin-bottom: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  
+      .popup-right .buttons button {
+        margin: 10px;
+        padding: 12px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+  
+      .popup-right .buttons button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      }
+  
+      .popup-right .buttons button:nth-child(2) {
+        background-color: #0070C9;
+      }
+  
+      .popup-right p {
+        color: #666;
+        margin-bottom: 20px;
+      }
+  
+      .popup-right img.qr-code {
+        width: 120px;
+        height: 120px;
+        border: 1px solid #ddd;
+        padding: 5px;
+        background: white;
+      }
