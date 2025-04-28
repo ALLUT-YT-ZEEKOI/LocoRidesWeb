@@ -63,6 +63,7 @@ header {
     white-space: nowrap;
     font-weight: 600;
     color: black;
+    border-radius: 4px;
   }
   .nav-links a:hover,
   .nav-links a:focus,
@@ -73,7 +74,7 @@ header {
   
 
   .book-btn {
-    background: linear-gradient(270deg, #FF7234 0%, #FF4D00 100%);
+    background:  #FDA50F;
 
     color: white;
     padding: 8px 16px;
@@ -132,8 +133,19 @@ header {
     justify-content: center;
   }
 
-
-
+.ourbike_icondiv{
+    background: #d7fcf5;
+    padding: 50px;
+    border-radius: 100%;
+}
+.ourBikeMainhead{
+    font-size: 16px;
+    font-weight: bold;
+}
+.outBikeDis{
+    font-size: 14px;
+    padding-top: 15px;
+}
     /* //Product Card */
     .card {
         width: 250px;
@@ -247,7 +259,7 @@ h2.title {
 }
 
 h2.title span {
-    color: #219ebc;
+    color: #FDA50F;
 }
 
 .test-info {
@@ -291,7 +303,7 @@ h2.title span {
 .testimonial-box.slick-active.slick-center {
 
     transform: scale(1.1);
-    background: #023047;
+    background: #FDA50F;
 
 }
 
@@ -333,7 +345,7 @@ ul.slick-dots li.slick-active button {
 
 
 .slick-prev , .slick-next {
-    background-color: #023047;
+    background-color: #FDA50F;
     color: white;
     border: none;
     font-size: 20px;
@@ -423,7 +435,7 @@ margin-top: 30px;
     padding: 30px 50px 30px 50px;
 }
 .POWERED_items img{
-    width:150px;
+    width:120px;
 }
 .customer_footer{
     background-color: #30343e;
@@ -443,7 +455,6 @@ margin-top: 30px;
 }
 .custom_footer_child{
     font-size: 14px;
-    line-height: 3;
     font-weight: 300;
 }
 .round_c{
@@ -451,4 +462,40 @@ margin-top: 30px;
     width: 100px;
     height: 100px;
 
+}
+.location_div{
+    border-color: orange;
+}
+.foter_l{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.863);
+    padding-top: 14px;
+
+}
+.footer_down_text{
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.playstore_c{
+    border: 1px solid grey;
+    margin: 5px;
+    width: 76%;
+    padding: 10px;
+    text-align: center;
+}
+.icon_cpntainer {
+    background-color: #393d47;
+    border-radius: 100%;
+    margin: 10px;
+padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_cpntainer i {
+    color: white;
+    font-size: 14px; 
 }

@@ -27,28 +27,33 @@
 <!-- custome css    -->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-  
     body {
       font-family: 'Montserrat', sans-serif;
     }
   </style>
-
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-
-    
     <title>Document</title>
-
 </head>
 <body>
     <div style="align-items:center;display: flex;justify-content: center;">
     <div class="first_header">
         <div class="first_header_child">
+            <div class="d-flex align-items-center justify-content-between" style="gap: 15px;">
+                <i class="fa-solid fa-phone"></i>   <p class="mb-0">Call Us: 9995598212</p>
+                <img src="assets/locoride_logo.png" width="65" height="30" alt="Logo">
+                <p class="mb-0">Hours of Operation: 7:00 am - 9:00 pm (Mon-Sun)</p>
+              </div>
+              
           <div class="d-flex">
-              <p>Call Us 9995598212</p>
-              <p>Hours of Operation: 7:00 am - 9:00pm(Mon-Sun)</p>
-          </div>
-          <div class="d-flex">
-           <p>Location</p>
+            <div class="location_div" style="position: relative; width: 160px; display: flex; align-items: center;">
+                <select id="locationSelect" class="form-control" style="appearance: none; padding-left: 25px; padding-right: 30px; font-size: 13px; flex-grow: 1; border: none; background: transparent; position: relative; z-index: 2;">
+                    <option value="varkala" selected>Varkala</option>
+                    <option value="newyork">New York</option>
+                    <option value="losangeles">Los Angeles</option>
+                </select>
+                <i class="fa-solid fa-location-dot" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); font-size: 14px; color: #555; z-index: 3; pointer-events: none;"></i>
+                <i class="fa-solid fa-chevron-down" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 10px; color: #555; z-index: 3; pointer-events: none;"></i>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -56,7 +61,7 @@
    <header>
     <nav>
       <div class="logo">
-        <a href="#">Komo Bike</a>
+        <a href="#"><img src="assets\locoride_logo.png" width="120px" alt=""></a>
       </div>
   
       <div class="nav-container">
@@ -254,9 +259,29 @@
         
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="assets/Royal Enfield classic 1.png" class="card-img-top" width="100%">
+                        <img src="assets\Activa_Special_bike.png" class="card-img-top" width="100%">
                         <div class="card-body pt-0 px-0">
-                            <div class="d-flex flex-row justify-content-between mb-0 px-3">
+                            <div class="d-flex flex-row justify-content-between p-3 mid">
+                                <div class="d-flex flex-column">
+                                    <!-- <small class="text-muted mb-1">ENGINE</small> -->
+                                    <div class="d-flex flex-row">
+                                        <img src="assets\Hero_logo.png" width="50px" height="50px">
+                                        <div class="d-flex flex-column ml-1">
+                                            <!-- <small class="ghj">1.4L MultiAir</small> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                           
+                                    <div class="d-flex flex-row">
+                                        <!-- <img src="https://imgur.com/J11mEBq.png"> -->
+                                        <h6 class="ml-1" style="font-weight: 700;">Activa Special Edition&ast;</h6>
+                                        
+                                    </div>
+                                    <small class="text-muted mb-2">Rent this bike</small>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mt-3 px-3">
                                 <span class="text-muted">Extra km</span>
                                 <h6>₹6.0 /km&ast;</h6>
                             </div>
@@ -272,30 +297,11 @@
                                 </div>
                             </div>
                          
-                            <div class="d-flex flex-row justify-content-between p-3 mid">
-                                <div class="d-flex flex-column">
-                                    <!-- <small class="text-muted mb-1">ENGINE</small> -->
-                                    <div class="d-flex flex-row">
-                                        <img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px">
-                                        <div class="d-flex flex-column ml-1">
-                                            <small class="ghj">1.4L MultiAir</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                           
-                                    <div class="d-flex flex-row">
-                                        <!-- <img src="https://imgur.com/J11mEBq.png"> -->
-                                        <h6 class="ml-1">₹330.00/day&ast;</h6>
-                                        
-                                    </div>
-                                    <small class="text-muted mb-2">Rent this bike</small>
-                                </div>
-                            </div>
+
                             <!-- <small class="text-muted key pl-3">Standard key Features</small> -->
                             <div class="mx-3 mt-2 mb-2">
-                                <button type="button" class="btn btn-danger btn-block" style="width:100% ; background-color: #F23300;">
-                                    <small>BUILD & PRICE</small>
+                                <button type="button" class="btn btn-danger btn-block" style="width:100% ; background-color:  #FDA50F;">
+                                    <small>₹330.00 / day</small>
                                 </button>
                             </div>
                             <small class="d-flex justify-content-center text-muted">*Legal Disclaimer</small>
@@ -442,8 +448,8 @@
 
     <!-- accordion -->
      <!-- testimonial -->
-      
-    <section class="py-5 testimonial-sec" style="background-image: url(imgs/test-bg.png);">
+     <!-- background-image: url(imgs/test-bg.png); -->
+    <section class="py-5 testimonial-sec" >
         <div class="container">
             <h2 class="title text-center mb-4 "><span>Why People </span> Say About Our Services</h2>
 
@@ -514,12 +520,12 @@
     
  <div class="POWERED">POWERED BY WORLDWIDE BRANDS</div>
  <div class="POWERED_items">
-    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-01.svg" alt="">
-    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-03.svg" alt="">
-    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-01.svg" alt="">
-    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-03.svg" alt="">
-    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-01.svg" alt="">
-    <img src="https://komo.vamtam.com/wp-content/uploads/2018/08/Logo-03.svg" alt="">
+    <img src="assets\Hero_logo.png" alt="">
+    <img src="assets\TVS.png" alt="">
+    <img src="assets\royal.png" alt="">
+    <img src="assets\Honda.png" alt="">
+    <img src="assets\yamaha.png" alt="">
+
  </div>
 
 <div style="display: flex;justify-content: center;"> <img src="assets\wdwdw.png" alt=""></div>
@@ -536,60 +542,43 @@
             </div>
          
 <div style="display: flex;justify-content: space-between;">
-    <div style="display: flex;flex-direction: column; justify-content: space-between;">
-        <div class="custom_footer_head">Bikes</div>
-        <div class="custom_footer_child">Handbrake Bike</div>
-        <div class="custom_footer_child">Handbrake Bike</div>
-        <div class="custom_footer_child">Handbrake Bike</div>
-        <div class="custom_footer_child">Handbrake Bike</div>
-        <div class="custom_footer_child">Handbrake Bike</div>
-        <div class="custom_footer_child">Handbrake Bike</div>
-        <a href="#" class="book-btn">Book a bike</a>
+    <div style="display: flex;flex-direction: column;">
+<img src="assets/locoride_logo.png" width="250px" style="padding-top: 18px;" alt="">
+<div class="foter_l">C 2025 Primemover Mobility Technologies Pvt Ltd. All <br> rights reserved</div>
+<div class="footer_down_text">Download the Revv App!</div>
+<div class="playstore_c"><i class="fa-brands fa-apple"></i> &#160 Download App Store!</div>
+<div class="playstore_c"><i class="fa-solid fa-play"></i> &#160 Download Google Play</div>
+</div>
+<div style="display: flex;flex-direction: column;">
+    <div class="custom_footer_head">Locations</div>
+    <div class="custom_footer_child" style="padding-top: 10px;line-height: 2;" >Kona Central Park: <br>
+        203 West 58th Street <br>
+        +800-567-8990</div>
+    
+
+</div>
+<div style="display: flex;flex-direction: column;justify-content: space-between; ">
+    <div class="custom_footer_head">About</div>
+    <div class="custom_footer_child">About Us</div>
+    <div class="custom_footer_child">FAQ</div>
+    <div class="custom_footer_child">Features List</div>
+    <div class="custom_footer_child">Coming Soon</div>
+    <div class="custom_footer_child">Animation Builder</div>
+    <div class="custom_footer_child">Appointments</div>
+    <div class="custom_footer_child">Events</div>
+        
+
 </div>
 <div style="display: flex;flex-direction: column; justify-content: space-between;">
-    <div class="custom_footer_head">Bikes</div>
+    <div class="custom_footer_head">Languages</div>
+    <div class="custom_footer_child">English</div>
+    <div class="custom_footer_child">Nederlands</div>
+    <div class="custom_footer_child">Français</div>
+    <div class="custom_footer_child">Deutsch</div>
+    <div class="custom_footer_child">Español</div>
     <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-</div>
-<div style="display: flex;flex-direction: column; justify-content: space-between;">
-    <div class="custom_footer_head">Bikes</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-</div>
-<div style="display: flex;flex-direction: column; justify-content: space-between;">
-    <div class="custom_footer_head">Bikes</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-</div>
-<div style="display: flex;flex-direction: column; justify-content: space-between;">
-    <div class="custom_footer_head">Bikes</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-</div>
-<div style="display: flex;flex-direction: column; justify-content: space-between;">
-    <div class="custom_footer_head">Bikes</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
-    <div class="custom_footer_child">Handbrake Bike</div>
+    <div class="custom_footer_child">Português</div>
+    
 </div>
 
 
@@ -597,11 +586,11 @@
 <img src="assets\Screenshot 2025-04-27 174618a.png" width="100%" alt="">
 <div style="display:flex; justify-content: space-between;">
 <div style="font-size: 13px;color: gray;">© 2025 Bike Rental Theme / VamTam. All rights reserved.</div>
-<div style="display: flex;align-items: center;">
-<div><i class="fab fa-facebook-f" style="padding-right: 30px;"></i></div>
-<div><i class="fab fa-whatsapp"  style="padding-right: 30px;"></i></i></div>
-<div><i class="fa-brands fa-instagram" style="padding-right: 30px;"></i></div>
-</div>
+<div style="display: flex; align-items: center;">
+    <div class="icon_cpntainer"><i class="fab fa-facebook-f"></i></div>
+    <div class="icon_cpntainer"><i class="fab fa-whatsapp"></i></div>
+    <div class="icon_cpntainer"><i class="fab fa-instagram"></i></div>
+  </div>
 <div style="font-size: 13px;color: gray;">Terms and Conditions</div>
 </div>
     </div>
