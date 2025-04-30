@@ -85,7 +85,7 @@ header {
   }
 
   .book-btn:hover {
-    background-color: #0056b3;
+    background-color: #ff3400;
   }
 
   /* Dropdown styles */
@@ -453,15 +453,22 @@ margin-top: 30px;
     font-weight: 600;
     
 }
+.web_clr{
+    color: #FDA50F;
+}
 .custom_footer_child{
     font-size: 14px;
     font-weight: 300;
+    line-height: 3;
 }
 .round_c{
     background-color: #30343e;
     width: 100px;
     height: 100px;
 
+}
+.main_headers{
+    text-align: center;margin-top:120px; margin-bottom: 60px;font-weight: 700;
 }
 .location_div{
     border-color: orange;
@@ -472,19 +479,7 @@ margin-top: 30px;
     padding-top: 14px;
 
 }
-.footer_down_text{
-    font-size: 14px;
-    font-weight: 700;
-    padding-top: 14px;
-    padding-bottom: 14px;
-}
-.playstore_c{
-    border: 1px solid grey;
-    margin: 5px;
-    width: 76%;
-    padding: 10px;
-    text-align: center;
-}
+
 .icon_cpntainer {
     background-color: #393d47;
     border-radius: 100%;
@@ -603,6 +598,7 @@ padding: 12px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column; 
       }
   
       .popup-right .buttons button {
@@ -638,4 +634,12 @@ padding: 12px;
         border: 1px solid #ddd;
         padding: 5px;
         background: white;
+      }
+      .Download_apps_c{
+        display: flex;
+      }
+      .Download_apps_c img{
+       width: 125px;
+       padding: 8px 5px 8px 0px;
+
       }
